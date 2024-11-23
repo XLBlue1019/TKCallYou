@@ -16,4 +16,27 @@
 
 [zhiyiYo/PyQt-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
 
+## 如何设置`config.json`？
 
+**注：** 未标注非必填的均为必填项，下方注释 **并不符合JSON规范，仅做标注**
+
+```json
+{
+    "mode": "r", // 模式，r为接收端，s为发送端
+    "mqtt": {
+        "broker": "broker.emqx.io", // mqtt服务器地址（接收端和发送端需相同，示例为EMQX公共服务器）
+        "port": 1883, // 端口（接收端和发送端需相同）
+        "topic": "tks/callyou/pymqtt/TKCU001", // 主题（接收端和发送端需相同，尽可能不要与其他用户（相同服务器下）重复）
+        "client_id": "PYTKCU-r-TKCU001", // Client ID（接收端和发送端需不同，尽可能不要与其他用户（相同服务器下）重复）
+        "username": "emqx", // 用户名（即使没有密码也必填）
+        "password": "**********" // 密码（即使没有密码也必填）
+    },
+    "performance": {
+        "refresh_time": 5000 // 刷新时间（每两次接收信息的间隔时间，单位ms，接收端配置，发送端非必填）
+    },
+    "show": {
+        "stay_time": 10000 // 消息弹窗停留时间（单位ms，接收端配置，发送端非必填）
+    },
+    "key": "EXAMPLEKEY" // 消息加密秘钥（符合pycryptodome AES加密秘钥标准并使用BASE64编码，可调用cryption.py下的 randkey(lenth: int) 函数生成，接收端和发送端需相同）
+}
+```
