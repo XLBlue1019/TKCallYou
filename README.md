@@ -12,8 +12,8 @@
 
 该软件使用 pycryptodome 对发送的消息进行 AES 加密，并发布到设定的 MQTT 服务器（默认为 EMQX 公共服务器）上，接收端接收到消息后解密，弹窗显示在屏幕上方。
 
-## 特别感谢
+## 参考
 
-本项目调用了 [zhiyiYo/PyQt-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets) 组件库。
+[zhiyiYo/PyQt-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
 
 
