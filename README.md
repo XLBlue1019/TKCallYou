@@ -1,4 +1,4 @@
-![CallYouIcon](https://soft.bluetinker.cn/cu/icon.png "CallYou")
+![CallYouIcon](https://soft.bluetinker.cn/cu/icon.png)
 
 # CallYou！一个适用于教室大屏的通知软件
 
