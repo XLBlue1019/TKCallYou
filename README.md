@@ -43,3 +43,13 @@
     "key": "EXAMPLEKEY" // 消息加密秘钥（符合pycryptodome AES加密秘钥标准并使用BASE64编码，可调用cryption.py下的 randkey(lenth: int) 函数生成，接收端和发送端需相同）
 }
 ```
+
+## 🧰开发环境
+
+### `Python`
+
+版本：`3.13.2`
+
+使用模块：见仓库根目录下`requirements.txt`文件
+
+
