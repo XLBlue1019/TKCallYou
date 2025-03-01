@@ -1,0 +1,1 @@
+pyinstaller --onedir -w -n CallYou -i ./CallYouIcon.ico main.py

@@ -1,0 +1,18 @@
+{
+    "mode": "r", 
+    "mqtt": {
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "topic": "tks/callyou/pymqtt/TKCU00000000000",
+        "client_id": "PYTKCU-r-TKCU00000000000",
+        "username": "emqx",
+        "password": "**********"
+    },
+    "performance": {
+        "refresh_time": 5000
+    },
+    "show": {
+        "stay_time": 10000
+    },
+    "key": "+hIuwIKdp8BEvTMwARu5KA=="
+}

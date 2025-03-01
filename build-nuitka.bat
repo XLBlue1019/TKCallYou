@@ -1,0 +1,1 @@
+python -m nuitka --remove-output --lto=no --onefile --standalone --include-module=PyQt6 main.py
