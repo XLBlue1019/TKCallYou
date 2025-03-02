@@ -10,13 +10,8 @@
     <height>311</height>
    </rect>
   </property>
-  <property name="font">
-   <font>
-    <family>阿里巴巴普惠体 3.0 55 Regular</family>
-   </font>
-  </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>CallYou</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -28,8 +23,7 @@
          <widget class="QLabel" name="titleLabel">
           <property name="font">
            <font>
-            <family>阿里巴巴普惠体 3.0 95 ExtraBold</family>
-            <pointsize>18</pointsize>
+            <pointsize>17</pointsize>
             <bold>true</bold>
            </font>
           </property>
@@ -52,7 +46,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="TransparentToolButton" name="aboutPbtn">
+         <widget class="QPushButton" name="aboutPbtn">
           <property name="text">
            <string>关于</string>
           </property>
@@ -75,17 +69,22 @@
       </item>
       <item>
        <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>你要发送什么呢？</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="LineEdit" name="MessageEdit">
+       <widget class="QLineEdit" name="MessageEdit">
         <property name="font">
          <font>
-          <family>阿里巴巴普惠体 3.0 55 Regular</family>
-          <pointsize>14</pointsize>
+          <pointsize>12</pointsize>
          </font>
         </property>
        </widget>
@@ -106,7 +105,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="TransparentPushButton" name="seniorEditorPbtn">
+         <widget class="QPushButton" name="seniorEditorPbtn">
           <property name="text">
            <string>高级编辑器</string>
           </property>
@@ -115,7 +114,13 @@
        </layout>
       </item>
       <item>
-       <widget class="PushButton" name="sendPbtn">
+       <widget class="QPushButton" name="sendPbtn">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="text">
          <string>发射！</string>
         </property>
@@ -139,28 +144,6 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PushButton</class>
-   <extends>QPushButton</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
-   <class>TransparentPushButton</class>
-   <extends>QPushButton</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
-   <class>LineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
-   <class>TransparentToolButton</class>
-   <extends>QPushButton</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

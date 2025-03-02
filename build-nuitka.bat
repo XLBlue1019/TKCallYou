@@ -1,1 +1,1 @@
-python -m nuitka --remove-output --lto=no --standalone --include-module=pyqt6 main.py
+python -m nuitka --remove-output --disable-console --lto=no --standalone --enable-plugin=pyside6 --include-data-dir=./img/=./img/ --include-data-files=./config.json=./config.json main.py

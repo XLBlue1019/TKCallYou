@@ -13,11 +13,11 @@
 
 ## 🧐原理
 
-该软件使用 pycryptodome 对发送的消息进行 AES 加密，并发布到设定的 MQTT 服务器（默认为 EMQX 公共服务器）上，接收端接收到消息后解密，弹窗显示在屏幕上方。
+该软件用户界面使用`Pyside6`，使用`pycryptodome`对发送的消息进行AES加密，并发布到设定的MQTT服务器（默认为EMQX公共服务器）上，接收端接收到消息后解密，弹窗显示在屏幕上方。
 
-## 🛠️使用组件
+## 📷屏幕截图
 
-[zhiyiYo/PyQt-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
+
 
 ## ❓如何设置`config.json`？
 
@@ -30,12 +30,9 @@
         "broker": "broker.emqx.io", // mqtt服务器地址（接收端和发送端需相同，示例为EMQX公共服务器）
         "port": 1883, // 端口（接收端和发送端需相同）
         "topic": "tks/callyou/pymqtt/TKCU001", // 主题（接收端和发送端需相同，尽可能不要与其他用户（相同服务器下）重复）
-        "client_id": "PYTKCU-r-TKCU001", // Client ID（接收端和发送端需不同，尽可能不要与其他用户（相同服务器下）重复）
+        "client_id": "PYTKCU-r-TKCU001", // Client ID（接收端和发送端需不同，尽可能不要与其他用户（相同服务器的相同topic下）重复）
         "username": "emqx", // 用户名（即使没有密码也必填）
         "password": "**********" // 密码（即使没有密码也必填）
-    },
-    "performance": {
-        "refresh_time": 5000 // 刷新时间（每两次接收信息的间隔时间，单位ms，接收端配置，发送端非必填）
     },
     "show": {
         "stay_time": 10000 // 消息弹窗停留时间（单位ms，接收端配置，发送端非必填）
@@ -52,4 +49,6 @@
 
 使用模块：见仓库根目录下`requirements.txt`文件
 
+## ❗重要更改
 
+自`2025/3/2`起，从`PyQt6`转而使用`PySide6`，且从项目中移除了`QFluentWidgets`组件库，不再支持`v2.0.0`以下版本的`paho-mqtt`库。

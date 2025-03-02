@@ -8,9 +8,6 @@
         "username": "emqx",
         "password": "**********"
     },
-    "performance": {
-        "refresh_time": 5000
-    },
     "show": {
         "stay_time": 10000
     },

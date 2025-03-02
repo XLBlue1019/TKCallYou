@@ -11,7 +11,7 @@ password = ""
 
 
 def connect_mqtt(on_connect = lambda client, userdata, flags, rc: print("Connected to MQTT Broker!") if rc == 0 else print(f"Failed to connect, return code {rc}")):
-    client = mqtt_client.Client(client_id)
+    client = mqtt_client.Client(mqtt_client.CallbackAPIVersion.VERSION1, client_id)
     client.username_pw_set(username, password)
     client.on_connect = on_connect
     client.connect(broker, port)

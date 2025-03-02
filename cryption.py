@@ -41,4 +41,4 @@ def tkcudecrypt(content: str, key: str):
     return b64decode(aesdecrypt(b64decode(content), b64decode(key))).decode("utf-8")
 
 
-print(randkey(16))
+# print(randkey(16))

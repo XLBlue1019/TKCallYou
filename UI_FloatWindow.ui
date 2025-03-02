@@ -6,24 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>300</height>
+    <width>960</width>
+    <height>150</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1920</width>
+    <width>960</width>
     <height>150</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1920</width>
-    <height>300</height>
+    <width>3840</width>
+    <height>2160</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>CallYouMsgWindow</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -39,7 +39,6 @@ color: rgba(255, 255, 255, 220);}</string>
          <widget class="QLabel" name="TextLabel">
           <property name="font">
            <font>
-            <family>阿里巴巴普惠体 3.0 75 SemiBold</family>
             <pointsize>64</pointsize>
             <bold>true</bold>
            </font>
@@ -48,7 +47,7 @@ color: rgba(255, 255, 255, 220);}</string>
            <string notr="true">color: rgb(255, 255, 255);</string>
           </property>
           <property name="text">
-           <string>TextLabel</string>
+           <string>MsgContent</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignmentFlag::AlignCenter</set>
