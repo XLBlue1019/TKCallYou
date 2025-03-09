@@ -87,8 +87,8 @@ class Ui_About(object):
     def retranslateUi(self, About):
         About.setWindowTitle("")
         self.label.setText(QCoreApplication.translate("About", u"\u5173\u4e8e About", None))
-        self.label_2.setText(QCoreApplication.translate("About", u"CallYou! V1.0.0 By XLBlue", None))
-        self.label_3.setText(QCoreApplication.translate("About", u"\u672c\u9879\u76ee\u7531 \u53ee\u5f53\u5de5\u4f5c\u5ba4 \u5c0f\u84ddXLBlue \u57fa\u4e8e PyQt6 \u548c PyQt6-Fluent-Widgets \u7ec4\u4ef6\u5e93 \u8fdb\u884c\u5f00\u53d1\n"
+        self.label_2.setText(QCoreApplication.translate("About", u"CallYou! V0.2.0 By XLBlue", None))
+        self.label_3.setText(QCoreApplication.translate("About", u"\u672c\u9879\u76ee\u7531 \u53ee\u5f53\u5de5\u4f5c\u5ba4 \u5c0f\u84ddXLBlue \u57fa\u4e8e PySide6, paho-mqtt, pycryptodome \u7b49\u5e93\u8fdb\u884c\u5f00\u53d1\n"
 "\u672c\u9879\u76ee\u57fa\u4e8e GPLv3 \u8bb8\u53ef\u8bc1 \u5f00\u6e90", None))
         self.pbtnHomePage.setText(QCoreApplication.translate("About", u"\u6b64\u9879\u76ee\u4e3b\u9875", None))
         self.pbtnAuthorWebsite.setText(QCoreApplication.translate("About", u"\u5c0f\u84ddXLBlue \u7684\u7f51\u7ad9", None))

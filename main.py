@@ -195,7 +195,7 @@ class CallYouAPP_R(QWidget, Ui_FloatWindow):
 
     def onReceiveMessage(self, msg):
         try:
-            self.nowMsg = cryption.tkcudecrypt(msg, self.config["key"])
+            self.nowMsg = str(cryption.tkcudecrypt(msg, self.config["key"]))
         except Exception as e:
             print(f"ERROR: CAN'T DECRYPT MSG!\n{e}")
             self.showDialogBox(
@@ -205,8 +205,7 @@ class CallYouAPP_R(QWidget, Ui_FloatWindow):
         else:
             print(self.nowMsg)
             self.TextLabel.setText(self.nowMsg)
-            self.TextLabel.repaint()
-            self.repaint()
+            # self.repaint()
             self.showWindow()
 
     def onConnect(self, rc):

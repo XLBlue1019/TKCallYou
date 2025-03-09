@@ -1,5 +1,5 @@
 import base64 as b64
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 import secrets
 
 

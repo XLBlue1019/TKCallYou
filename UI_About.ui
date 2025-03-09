@@ -48,7 +48,7 @@
       </font>
      </property>
      <property name="text">
-      <string>CallYou! V1.0.0 By XLBlue</string>
+      <string>CallYou! V0.2.0 By XLBlue</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft</set>
@@ -58,7 +58,7 @@
    <item>
     <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>本项目由 叮当工作室 小蓝XLBlue 基于 PyQt6 和 PyQt6-Fluent-Widgets 组件库 进行开发
+      <string>本项目由 叮当工作室 小蓝XLBlue 基于 PySide6, paho-mqtt, pycryptodome 等库进行开发
 本项目基于 GPLv3 许可证 开源</string>
      </property>
      <property name="scaledContents">
